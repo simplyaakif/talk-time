@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="526673a6-698b-40af-87a5-fbc0e5e6d5bd" name="Talk Time">
+        <fileTransfer rootFolder="/var/www/talktime/" accessType="SFTP" host="157.90.18.185" port="22" sshConfigId="dbb037aa-fd84-418c-b7d6-9a2df2866480" sshConfig="Aakif VPS">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
