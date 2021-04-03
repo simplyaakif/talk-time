@@ -24,11 +24,7 @@
                 'dob'        => null,
                 'profession' => $this->faker->word,
                 'city'       => $this->faker->city,
-
-
-                'user_id' => function () {
-                    return User::factory()->create()->id;
-                },
+                'user_id' => 5
             ];
         }
     }

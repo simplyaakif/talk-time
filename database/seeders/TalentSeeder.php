@@ -3,6 +3,7 @@
     namespace Database\Seeders;
 
     use App\Models\Talent;
+    use App\Models\User;
     use Illuminate\Database\Seeder;
 
     class TalentSeeder extends Seeder {
@@ -14,6 +15,13 @@
          */
         public function run()
         {
-            Talent::factory()->count(1)->create();
+            User::factory()
+            ->has(
+                Talent::factory()
+                    ->state(function (array $attributes, User $user) {
+                        return ['name' => $user->name,];
+                    })
+            )
+            ->create();
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-    Route::view('/', 'landingPage');
+    Route::view('/', 'talktimePages.home');
     Auth::routes(['register' => true]);
 
     Route::group([

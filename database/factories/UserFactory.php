@@ -21,7 +21,7 @@
             return [
                 'name'           => $this->faker->name,
                 'email'          => $this->faker->unique()->safeEmail,
-                'password'       => bcrypt($this->faker->password),
+                'password'       => '$2y$10$1EMUs0b/NF7K5uL/zi.ffOl0nvnydjCavd28OANcC7.Z7USNEIjMy',
                 'remember_token' => Str::random(10),
 
             ];

@@ -78,4 +78,9 @@ class Talent extends Model implements HasMedia
 
         return $file;
     }
+
+    public function talentPackage()
+    {
+        return $this->hasOne(TalentPackage::class);
+    }
 }
